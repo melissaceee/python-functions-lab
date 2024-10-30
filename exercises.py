@@ -79,4 +79,19 @@ print('Exercise 8:', product(-1, 4))
 print('Exercise 8:', product(3, 7, 2)) 
 
 # Exercise 9: Basic Calculator
-def basicCalculator(num1, 
+def basicCalculator(num1, num2, operation):
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        return num1 / num2 if num2 != 0 else "Cannot divide by zero"
+    else:
+        return "Invalid operation"
+
+print('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))  
+print('Exercise 9 Result:', basicCalculator(10, 5, "add"))       
+print('Exercise 9 Result:', basicCalculator(10, 5, "multiply"))  
+print('Exercise 9 Result:', basicCalculator(10, 5, "divide"))   
