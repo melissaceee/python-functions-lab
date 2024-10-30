@@ -28,7 +28,25 @@ print('Exercise 3:', apply_discount(100, 25))
 # Exercise 4: Convert Temperature
 
 def convert_temperature(temperature, unit):
-
     if unit == 'C':
+        converted_temp = (temperature * 9/5) + 32
+    elif unit == 'F':
+        converted_temp = (temperature - 32) * 5/9
+    else:
+        return "Invalid unit"  
 
-        
+    return converted_temp
+
+print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))  # Should return 32.0
+print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))   # Should return 0.0
+
+
+# Exercise 5: Sum to N
+def sum_to(n):
+    return n * (n + 1) // 2
+
+print('Exercise 5:', sum_to(6))  
+print('Exercise 5:', sum_to(10)) 
+
+
+
