@@ -49,4 +49,34 @@ print('Exercise 5:', sum_to(6))
 print('Exercise 5:', sum_to(10)) 
 
 
+# Exercise 6: Find the Largest Number
+def largest(a, b, c):
+    return max(a, b, c)
 
+print('Exercise 6:', largest(1, 2, 3))  
+print('Exercise 6:', largest(10, 4, 2)) 
+print('Exercise 6:', largest(5, 7, 6))
+
+
+# Exercise 7: Calculate a Tip
+def calculate_tip(bill_amount, tip_percentage):
+    tip = (bill_amount * tip_percentage) / 100
+    return tip
+
+
+print('Exercise 7:', calculate_tip(50, 20))  
+
+
+# Exercise 8: Calculate Product of Numbers
+def product(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
+
+print('Exercise 8:', product(2, 5, 5)) 
+print('Exercise 8:', product(-1, 4))    
+print('Exercise 8:', product(3, 7, 2)) 
+
+# Exercise 9: Basic Calculator
+def basicCalculator(num1, 
